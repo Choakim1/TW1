@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Hádej Potraviny</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div id="game-container">
+            <h1>Hádej Potraviny</h1>
+            <div id="score">Skóre: <span id="score-value">0</span>/10</div>
+            <div id="timer">10</div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <img id="food-image" src="" alt="Food Image">
+            <div id="answers"></div>
+            <button id="restart-button">Restart</button>
+        </div>
+
+        <div id="leaderboard-container">
+            <h2>Nejlepší Hráči</h2>
+            <div id="player-form" class="hidden">
+                <input type="text" id="player-name" placeholder="Zadejte své jméno" maxlength="20">
+                <button id="save-score">Uložit skóre</button>
+            </div>
+            <table id="leaderboard">
+                <thead>
+                    <tr>
+                        <th>Pořadí</th>
+                        <th>Jméno</th>
+                        <th>Skóre</th>
+                        <th>Datum</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="leaderboard.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
